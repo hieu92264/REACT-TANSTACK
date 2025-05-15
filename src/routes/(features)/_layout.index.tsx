@@ -172,7 +172,7 @@ function Page({
   ],
 }: Hero32Props) {
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden ml-5">
       <div className="absolute inset-x-0 top-0 flex h-full w-full items-center justify-center opacity-100">
         <img
           alt="background"

@@ -9,6 +9,6 @@ export const useGetUsers = () => {
     // Keep the data fresh for 5 minutes
     staleTime: 5 * 60 * 1000,
     // Refetch the data every 5 minutes
-    refetchInterval: 5 * 60 * 1000,
+    // refetchInterval: 5 * 60 * 1000,
   })
 }
