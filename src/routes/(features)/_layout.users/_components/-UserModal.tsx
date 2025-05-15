@@ -66,8 +66,8 @@ const UserModal: React.FC<UserModalProps> = ({
     },
   })
 
-  const { mutate: createUser, isPending: isCreating } = useCreateUser()
-  const { mutate: updateUser, isPending: isUpdateing } = useUpdateUser()
+  const { mutate: createUser } = useCreateUser()
+  const { mutate: updateUser } = useUpdateUser()
 
   React.useEffect(() => {
     if (isOpenModal && isUpdate && record) {
