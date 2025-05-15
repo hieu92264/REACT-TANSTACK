@@ -11,8 +11,8 @@ const axiosInstance = axios.create({
 
 axiosInstance.interceptors.request.use(
   (config) => {
-    const token =
-      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTmd1eWVuIFRoZSBIaWV1IiwiZW1haWwiOiJoaWV1OTIyNjRAc3QudmltYXJ1LmVkdS52biIsImlkIjo2LCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3NDcyOTU4NTcsImV4cCI6MTc0NzI5OTQ1N30.ealKKG_SAIpNod2P9wID6Zki_zpWsfK7rMw_xRBxtb4'
+    const token = import.meta.env.VITE_API_ACCESS_TOKEN
+
     if (token) {
       config.headers.Authorization = `Bearer ${token}`
     }
